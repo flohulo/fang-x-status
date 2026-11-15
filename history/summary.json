@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Fang X App",
+    "url": "https://fang-x.freizeit.workers.dev/",
+    "icon": "https://icons.duckduckgo.com/ip3/fang-x.freizeit.workers.dev.ico",
+    "slug": "fang-x-app",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 134,
+    "timeDay": 134,
+    "timeWeek": 134,
+    "timeMonth": 134,
+    "timeYear": 134,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "Webseite und Handbuch",
+    "url": "https://flohulo.github.io/fang-x/",
+    "icon": "https://icons.duckduckgo.com/ip3/flohulo.github.io.ico",
+    "slug": "webseite-und-handbuch",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 121,
+    "timeDay": 121,
+    "timeWeek": 121,
+    "timeMonth": 121,
+    "timeYear": 121,
+    "dailyMinutesDown": {}
+  }
+]

@@ -1,31 +1,58 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Konfiguration der Fang-X-Statusseite (Upptime, https://upptime.js.org/docs/configuration).
+# Nur diese Datei bearbeiten: Die Workflows in .github/workflows werden daraus erzeugt.
+owner: flohulo
+repo: fang-x-status
+
+# Bei einer Störung legt Upptime ein Issue an und weist es diesen Personen zu.
+assignees:
+  - flohulo
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Fang X App
+    url: https://fang-x.freizeit.workers.dev/
+  - name: Webseite und Handbuch
+    url: https://flohulo.github.io/fang-x/
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  # Ohne eigene Domain läuft die Seite unter https://flohulo.github.io/fang-x-status/
+  baseUrl: /fang-x-status
+  logoUrl: https://flohulo.github.io/fang-x/favicon.svg
+  favicon: https://flohulo.github.io/fang-x/favicon.svg
+  name: Fang X Status
+  introTitle: "Status und Neuigkeiten von **Fang X**"
+  introMessage: >-
+    Hier siehst du, ob Fang X gerade läuft und ob eine Störung bekannt ist. Störungen werden
+    automatisch erkannt und gemeldet. Geplante Wartungen und Neuigkeiten findest du ebenfalls hier.
+    Was sich in neuen Versionen geändert hat, steht im
+    [Changelog](https://github.com/flohulo/fang-x/blob/main/CHANGELOG.md).
+    Fehler meldest du am besten über [GitHub](https://github.com/flohulo/fang-x/issues/new/choose).
   navbar:
     - title: Status
       href: /
+    - title: Jetzt spielen
+      href: https://fang-x.freizeit.workers.dev/
+    - title: Handbuch
+      href: https://flohulo.github.io/fang-x/handbuch/
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+      href: https://github.com/flohulo/fang-x
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Deutsche Texte für die Statusseite. Nicht aufgeführte Texte bleiben englisch.
+i18n:
+  activeIncidents: Aktuelle Störungen
+  allSystemsOperational: Alles läuft
+  incidentReport: "Störung #$NUMBER"
+  activeIncidentSummary: Seit $DATE, $POSTS Beiträge
+  anIncidentReport: Störungsbericht
+  pastIncidents: Vergangene Störungen
+  pastIncidentsResolved: Behoben nach $MINUTES Minuten, $POSTS Beiträge
+  liveStatus: Live-Status
+  overallUptime: "Verfügbarkeit gesamt: $UPTIME"
+  averageResponseTime: "Durchschnittliche Antwortzeit: $TIME ms"
+  up: Läuft
+  down: Ausgefallen
+  degraded: Langsam
+  scheduledMaintenance: Geplante Wartung
+  pastScheduledMaintenance: Vergangene Wartungen
+  duration: Dauer
+  navGitHub: GitHub
+  footer: Diese Seite ist [Open Source]($REPO) und wird mit [Upptime](https://upptime.js.org) betrieben.

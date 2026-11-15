@@ -28,7 +28,7 @@ status-website:
     Fehler meldest du am besten über [GitHub](https://github.com/flohulo/fang-x/issues/new/choose).
   navbar:
     - title: Status
-      href: /
+      href: https://flohulo.github.io/fang-x-status/
     - title: Jetzt spielen
       href: https://fang-x.freizeit.workers.dev/
     - title: Handbuch
